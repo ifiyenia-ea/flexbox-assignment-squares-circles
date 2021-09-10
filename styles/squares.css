@@ -24,6 +24,7 @@
     width: 78px;
     background-color: blueviolet;
     margin: 10px;
+    text-align: center;
 }
 
 
@@ -33,18 +34,35 @@
 
 .box2 {
     justify-content: center;
-
 }
 
 .square1 {
     height: 140px;
-    
+    text-align: center;
 }
 
-/* I was NOT able to change the size of them
+/* I was NOT able to change the size of the squares
     using flexbox commands ... Stretch wouldn't
     work at all in any way; grow would only happen
-    on the main axis.  */
+    on the main axis (but this has helped me understand
+    the grow and shrink etc better).
+    
+    Also not sure whether I was meant to align the text
+    this way; I tried several different flexbox commands
+    but yet again, it wouldn't work. I'm sure there are 
+    plenty of things wrong or in the way in my code which
+    prevent this, but unfortunately I can't figure it out 
+    
+    Latest (last?) update regarding the stretching:
+    Is it maybe because I have given the squares its
+    sizes? 
+    -*/
+
+.square3 {
+    height: 60px;
+}
+
+
 
 .box3 {
     align-items: center;
@@ -63,7 +81,6 @@
     justify-content: space-evenly;
     align-items: center;
     color: white;
-        
 }
 
 p {
@@ -77,9 +94,6 @@ p {
     align-items: center;
  }
 
-/* .square3 {
-
-} */
 
 .square4 {
     flex-grow: 1;
@@ -94,5 +108,3 @@ p {
 
 /* Still todo:
     change tag names to fit BEM
-    sort sizes etc
-    texts to be correct
