@@ -18,14 +18,33 @@
     background-color: darkcyan;
 }
 
+.square {
+    display: flex;
+    height: 78px;
+    width: 78px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+
+
 .box1 {
     align-items: flex-end;
 }
 
 .box2 {
     justify-content: center;
+
+}
+
+.square1 {
+    height: 140px;
     
 }
+
+/* I was NOT able to change the size of them
+    using flexbox commands ... Stretch wouldn't
+    work at all in any way; grow would only happen
+    on the main axis.  */
 
 .box3 {
     align-items: center;
@@ -36,35 +55,42 @@
     justify-content: space-between;
 }
 
-.square1 {
+.square2 {
     align-self: flex-end;
 }
 
 .box5 {
     justify-content: space-evenly;
     align-items: center;
-    color: white
-    
+    color: white;
+        
 }
 
-.text {
+p {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .box6 {
     justify-content: center;
     align-items: center;
+ }
+
+/* .square3 {
+
+} */
+
+.square4 {
+    flex-grow: 1;
+    /* I think this one is wrong,
+        as it looks in Figma like
+        it should be a bit more
+        space between the side squares
+        and the edge of the box they're in,
+        but not able to figure that out now.. */
 }
 
-.square {
-    height: 78px;
-    width: 78px;
-    background-color: blueviolet;
-    margin: 10px;
-
-}
 
 /* Still todo:
     change tag names to fit BEM
