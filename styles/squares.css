@@ -1,14 +1,14 @@
-.boxes {
+.flex-containers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    width: 1500px;
-    height: 1000px;
+    /* width: 1500px; */
+    height: 100vh;
     background-color: turquoise;
 }
 
-.box {
+.flex__container {
     display: flex;
     width: 468px;
     height: 160px;
@@ -18,7 +18,7 @@
     background-color: darkcyan;
 }
 
-.square {
+.flex__square {
     display: flex;
     height: 78px;
     width: 78px;
@@ -28,56 +28,55 @@
 }
 
 
-.box1 {
+.flex__container-1 {
     align-items: flex-end;
 }
 
-.box2 {
+.flex__container-2 {
     justify-content: center;
 }
 
-.square1 {
+.flex__square-1 {
     height: 140px;
     text-align: center;
+
 }
 
-/* I was NOT able to change the size of the squares
-    using flexbox commands ... Stretch wouldn't
-    work at all in any way; grow would only happen
-    on the main axis (but this has helped me understand
-    the grow and shrink etc better).
-    
-    Also not sure whether I was meant to align the text
-    this way; I tried several different flexbox commands
-    but yet again, it wouldn't work. I'm sure there are 
-    plenty of things wrong or in the way in my code which
-    prevent this, but unfortunately I can't figure it out 
-    
-    Latest (last?) update regarding the stretching:
-    Is it maybe because I have given the squares its
-    sizes? 
-    -*/
+/* I am honestly completely lost here: 
+    I can't create these empty boxes
+    without giving them sizes - and they
+    can't "flex stretch" when they have
+    a set size. And, also - I understand
+    that stretch is the standard.
 
-.square3 {
+    I also tried the grow and shrink, which only
+    happens on their main axis and of course
+    can't put them in columns (and thereby "changing
+    the axis") without them ending up wrong.
+
+    I am sure I'm missing something completely
+    here, but at least this issue has helped me
+    understand both stretching and growing/
+    shrinking somewhat better) */
+
+.flex__square-3 {
     height: 60px;
 }
 
-
-
-.box3 {
+.flex__container-3 {
     align-items: center;
     justify-content: flex-end;
 }
 
-.box4 {
+.flex__container-4 {
     justify-content: space-between;
 }
 
-.square2 {
+.flex__square-2 {
     align-self: flex-end;
 }
 
-.box5 {
+.flex__container-5 {
     justify-content: space-evenly;
     align-items: center;
     color: white;
@@ -89,13 +88,13 @@ p {
     justify-content: center;
 }
 
-.box6 {
+.flex__container-6 {
     justify-content: center;
     align-items: center;
  }
 
 
-.square4 {
+.flex__square-4 {
     flex-grow: 1;
     /* I think this one is wrong,
         as it looks in Figma like
@@ -104,7 +103,3 @@ p {
         and the edge of the box they're in,
         but not able to figure that out now.. */
 }
-
-
-/* Still todo:
-    change tag names to fit BEM

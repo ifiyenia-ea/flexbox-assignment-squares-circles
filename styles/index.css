@@ -1,15 +1,14 @@
 
-.boxes {
+.flex-containers {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
-    justify-content: ;
-    width: 1400px;
-    height: 1000px;
+    /* width: 1400px; */
+    height: 100vh;
     background-color:bisque     
 }
 
-.container {
+.flex__container {
     background-color: burlywood;
     width: 273px;
     height: 220px;
@@ -23,37 +22,37 @@
     padding: 20px;
 }
 
-.container2, .container4 {
+.flex__container-2, .flex__container-4 {
     background-color: darkcyan;
 }
 
-.container1 {
+.flex__container-1 {
     align-content: flex-start 
 }
 
-.container2 {
+.flex__container-2 {
     flex-flow: row-reverse wrap-reverse;
     align-content: flex-start;
     justify-content: flex-start;
 }
 
-.container3 {
+.flex__container-3 {
     /* flex-direction: row; */
     align-content: space-between;
     justify-content: space-between;
 }
 
-.container4 {
+.flex__container-4 {
     align-content: space-around;
     justify-content: space-around;
 }
 
-.container5 {
+.flex__container-5 {
     align-content: center;
     justify-content: center;
 }
 
-.dot {
+.flex__dot {
     height: 60px;
     width: 60px;
     background-color: blueviolet;
